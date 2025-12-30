@@ -1,0 +1,72 @@
+<!-- Sample Floor Map SVG - Use this as a template -->
+<!-- Each element that should be colored needs a data-label attribute matching your FieldNumber data -->
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Room outlines -->
+  <g stroke="#333" stroke-width="2" fill="#ccc">
+    <!-- Room 101 -->
+    <rect data-label="101" x="50" y="50" width="150" height="120" rx="5"/>
+    
+    <!-- Room 102 -->
+    <rect data-label="102" x="220" y="50" width="150" height="120" rx="5"/>
+    
+    <!-- Room 103 -->
+    <rect data-label="103" x="390" y="50" width="150" height="120" rx="5"/>
+    
+    <!-- Room 104 -->
+    <rect data-label="104" x="560" y="50" width="150" height="120" rx="5"/>
+    
+    <!-- Room 201 -->
+    <rect data-label="201" x="50" y="200" width="150" height="120" rx="5"/>
+    
+    <!-- Room 202 -->
+    <rect data-label="202" x="220" y="200" width="150" height="120" rx="5"/>
+    
+    <!-- Room 203 -->
+    <rect data-label="203" x="390" y="200" width="150" height="120" rx="5"/>
+    
+    <!-- Room 204 -->
+    <rect data-label="204" x="560" y="200" width="150" height="120" rx="5"/>
+    
+    <!-- Desks / Seats -->
+    <circle data-label="A1" cx="100" cy="420" r="25"/>
+    <circle data-label="A2" cx="170" cy="420" r="25"/>
+    <circle data-label="A3" cx="240" cy="420" r="25"/>
+    <circle data-label="A4" cx="310" cy="420" r="25"/>
+    <circle data-label="B1" cx="100" cy="500" r="25"/>
+    <circle data-label="B2" cx="170" cy="500" r="25"/>
+    <circle data-label="B3" cx="240" cy="500" r="25"/>
+    <circle data-label="B4" cx="310" cy="500" r="25"/>
+    
+    <!-- Parking spots -->
+    <rect data-label="P1" x="450" y="400" width="60" height="80" rx="3"/>
+    <rect data-label="P2" x="520" y="400" width="60" height="80" rx="3"/>
+    <rect data-label="P3" x="590" y="400" width="60" height="80" rx="3"/>
+    <rect data-label="P4" x="660" y="400" width="60" height="80" rx="3"/>
+    <rect data-label="P5" x="450" y="490" width="60" height="80" rx="3"/>
+    <rect data-label="P6" x="520" y="490" width="60" height="80" rx="3"/>
+    <rect data-label="P7" x="590" y="490" width="60" height="80" rx="3"/>
+    <rect data-label="P8" x="660" y="490" width="60" height="80" rx="3"/>
+  </g>
+  
+  <!-- Labels -->
+  <g font-family="Arial" font-size="14" fill="#333" text-anchor="middle">
+    <text x="125" y="115">101</text>
+    <text x="295" y="115">102</text>
+    <text x="465" y="115">103</text>
+    <text x="635" y="115">104</text>
+    <text x="125" y="265">201</text>
+    <text x="295" y="265">202</text>
+    <text x="465" y="265">203</text>
+    <text x="635" y="265">204</text>
+  </g>
+  
+  <!-- Section Labels -->
+  <g font-family="Arial" font-size="18" font-weight="bold" fill="#666">
+    <text x="50" y="35">Conference Rooms</text>
+    <text x="50" y="385">Hot Desks</text>
+    <text x="450" y="385">Parking</text>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Field Number",
+      "name": "fieldNumber",
+      "kind": "Grouping",
+      "description": "The field number that matches the data-label attribute in the SVG"
+    },
+    {
+      "displayName": "Layer Color",
+      "name": "layerColor",
+      "kind": "Grouping",
+      "description": "Hex color value for the layer (e.g., #FF0000)"
+    }
+    ,
+    {
+      "displayName": "Tooltip Fields",
+      "name": "tooltipFields",
+      "kind": "Grouping",
+      "description": "Fields to show in the tooltip (you can add multiple)"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "select": [
+            { "for": { "in": "fieldNumber" } },
+            { "for": { "in": "layerColor" } },
+            { "for": { "in": "tooltipFields" } }
+          ]
+        }
+      }
+    }
+  ],
+  "objects": {
+    "dataPoint": {
+      "displayName": "Data colors",
+      "properties": {
+        "defaultColor": {
+          "displayName": "Default color",
+          "type": { "fill": { "solid": { "color": true } } }
+        },
+        "showAll": {
+          "displayName": "Show all",
+          "type": { "bool": true }
+        }
+      }
+    },
+    "svgSettings": {
+      "displayName": "SVG Settings",
+      "properties": {
+        "svgContent": {
+          "displayName": "SVG Content",
+          "description": "Paste your SVG content here",
+          "type": { "text": true }
+        }
+      }
+    },
+    
+    "displaySettings": {
+      "displayName": "Display Settings",
+      "properties": {
+        "showTooltips": {
+          "displayName": "Show Tooltips",
+          "description": "Show tooltips on hover",
+          "type": { "bool": true }
+        },
+        "enableZoom": {
+          "displayName": "Enable Zoom",
+          "description": "Enable zoom and pan functionality",
+          "type": { "bool": true }
+        }
+      }
+    }
+    ,
+    "polygonSettings": {
+      "displayName": "Polygon Transparency",
+      "properties": {
+        "enableTransparency": {
+          "displayName": "Enable Polygon Transparency",
+          "description": "Make polygon fills transparent by default and when colored",
+          "type": { "bool": true }
+        },
+        "highlightBorders": {
+          "displayName": "Highlight polygon borders",
+          "description": "Use the applied polygon color for the polygon border",
+          "type": { "bool": true }
+        },
+        "transparencyPercent": {
+          "displayName": "Transparency (%)",
+          "description": "Opacity percentage to apply to polygon fills (0-100)",
+          "type": { "text": true }
+        }
+      }
+    }
+  },
+  "privileges": []
+}
