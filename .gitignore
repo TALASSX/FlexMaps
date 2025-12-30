@@ -3,3 +3,8 @@ dist/
 .tmp/
 .vscode/
 *.pbiviz
+
+# Ignore TypeScript source and build artifacts
+src/
+*.ts
+*.tsx
