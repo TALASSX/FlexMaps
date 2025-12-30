@@ -1,0 +1,15 @@
+# Exclude source and dev files from generated archives (git-archive / GitHub release zips)
+# This ensures exported archives don't contain the TypeScript source files
+src/ export-ignore
+src/** export-ignore
+*.ts export-ignore
+tsconfig.json export-ignore
+tslint.json export-ignore
+.vscode/ export-ignore
+
+# Keep the visual distribution and docs
+visual/ export-ignore
+licenses/ !export-ignore
+README.md !export-ignore
+USAGE.md !export-ignore
+pbiviz.json !export-ignore

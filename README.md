@@ -83,6 +83,11 @@ Your SVG elements need `data-label` attributes that match your FieldNumber value
 
 A sample SVG is provided in `assets/sample-floor-map.svg`.
 
+## SVG Mapping Tools
+
+- For creating or editing custom SVG maps and assigning `data-label` attributes, consider using the **SVGMAPPER** application: https://github.com/TALASSX/SVGMapper
+  - It helps you quickly map element IDs and prepare clean SVGs for use with this visual.
+
 ## Format Pane Options
 
 ### SVG Settings

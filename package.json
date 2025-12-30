@@ -32,5 +32,12 @@
     "webpack-cli": "^6.0.1"
   },
   "author": "sai teja talasila <talasilasaiteja1255@gmail.com>",
-  "license": "MIT"
-}
+  "license": "MIT",
+  "files": [
+    "visual",
+    "licenses",
+    "README.md",
+    "USAGE.md",
+    "pbiviz.json"
+  ]
+} 
