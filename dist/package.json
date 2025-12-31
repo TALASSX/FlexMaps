@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"sai teja talasila","email":"talasilasaiteja1255@gmail.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/FlexMaps1234567890.pbiviz.json"
+			}
+		],
+		"visual": {"name":"FlexMaps","displayName":"FlexMaps","guid":"FlexMaps1234567890","visualClassName":"Visual","version":"1.0.0.0","description":"Multi-layer floor visuals, simplified","supportUrl":"https://github.com/TALASSX/FlexMaps","gitHubUrl":"https://github.com/TALASSX/FlexMaps"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

@@ -1,9 +1,13 @@
 node_modules/
 .tmp/
 .vscode/
-*.pbiviz
 
 # Keep private certificates out of the repo
 certs/
 
-# Do NOT ignore TypeScript source — include `src/` in the repo
+# Ignore source; track builds and packaged visuals
+src/
+*.ts
+*.tsx
+
+# Track built distribution and packaged visual files (do not ignore `dist/` or `*.pbiviz`)
