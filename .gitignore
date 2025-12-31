@@ -1,10 +1,9 @@
 node_modules/
-dist/
 .tmp/
 .vscode/
 *.pbiviz
 
-# Ignore TypeScript source and build artifacts
-src/
-*.ts
-*.tsx
+# Keep private certificates out of the repo
+certs/
+
+# Do NOT ignore TypeScript source — include `src/` in the repo
